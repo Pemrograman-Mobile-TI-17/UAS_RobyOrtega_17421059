@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/putih"
+    tools:context=".users.RegistrasiActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:text="Registrasi"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="16dp">
+
+    <LinearLayout
+      android:layout_width="368dp"
+      android:layout_height="337dp"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:gravity="center"
+      android:orientation="vertical">
+
+
+      <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:labelText="Username">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+          android:id="@+id/edtuserName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+      <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        app:labelText="Nama Lengkap">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+          android:id="@+id/edtnamalengkap"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+      <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        app:labelText="Email">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+          android:id="@+id/edtemail"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+
+      <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        app:labelText="Nomor Telp">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+          android:id="@+id/edtnomortelp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+
+      <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        app:labelText="Password">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+          android:id="@+id/edtpassword"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:inputType="textPassword" />
+
+      </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+
+
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <com.ornach.nobobutton.NoboButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        app:nb_text="Registrasi"
+        android:id="@+id/btnregis"
+        app:nb_borderColor="#FFFFFF"
+        app:nb_borderWidth="2dp"
+        app:nb_backgroundColor="@color/colorPrimary"
+        app:nb_focusColor="#B83CC3"
+        app:nb_textColor="#FFF"
+        app:nb_radius="5dp"/>
+
+
+    </LinearLayout>
+
+  <Button
+    android:id="@+id/btnlogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-15dp"
+    android:text="Sudah punya akun ? Login disini"
+    android:background="@null"
+    android:textAllCaps="false"/>
+</LinearLayout>
